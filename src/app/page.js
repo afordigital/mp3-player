@@ -91,7 +91,7 @@ export default function Home () {
         <section className='flex justify-end drop-shadow-lg h-fit'>
           <section className='w-[350px] bg-white'>
             <MenuIcon
-              className='absolute right-4 top-4'
+              className='absolute z-10 right-4 top-4'
               onClick={() => {
                 setIsMenuOpened(!isMenuOpened)
               }}

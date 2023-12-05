@@ -22,6 +22,20 @@ export const Commands = ({
         {!play ? <Play onClick={togglePlay} /> : <Pause onClick={togglePlay} />}
         <SkipNext onClick={() => nextSong()} />
       </div>
+      <div>
+        <input
+          type='range'
+          id='volume'
+          name='volume'
+          min='0'
+          max='100'
+          defaultValue='100'
+          onChange={event => {
+            audioRef.current.volume = event.target.value / 100
+          }}
+        />
+        <label for='volume'></label>
+      </div>
       <div className='flex mt-4 py-2 text-[#411583] font-semibold w-full flex-col justify-center items-center bg-[#ececf3] text-[12px]'>
         <p>Cuando sólo hay un candidato,</p>
         <p>solo hay una elección</p>
