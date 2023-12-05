@@ -18,12 +18,16 @@ export default function Home () {
   const { data, isLoading, isError } = useGetMusic()
   const song = data?.[currentSong]
 
-  const audioRef = useRef(new Audio())
+  const audioRef = useRef()
 
   useEffect(() => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio()
+    }
     audioRef.current.src = song?.songData
   }, [song])
 
+  console.log(typeof window)
   if (!song) return null
 
   // const audio = new Audio(urlAudio)
