@@ -10,7 +10,7 @@ export const useGetMusic = () => {
     async function getMusic () {
       try {
         setIsLoading(true)
-        const response = await fetch('http://localhost:3000/api/songs')
+        const response = await fetch('api/songs')
         const data = await response.json()
         setData(data)
         setIsLoading(false)
