@@ -75,7 +75,13 @@ export default function Home () {
             />
           </section>
         </section>
-        {isMenuOpened && <Menu data={data} setCurrentSong={setCurrentSong} />}
+        {isMenuOpened && (
+          <Menu
+            data={data}
+            setCurrentSong={setCurrentSong}
+            isOpen={isMenuOpened}
+          />
+        )}
       </section>
     </main>
   )
