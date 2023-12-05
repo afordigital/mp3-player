@@ -1,0 +1,32 @@
+[
+  {
+    "songTitle": "Song 1",
+    "channelName": "NCS",
+    "songThumbnail": "images/hamster_1.jpg",
+    "songData": "sounds/song_1.mp3"
+  },
+  {
+    "songTitle": "Song 2",
+    "channelName": "NCS",
+    "songThumbnail": "images/hamster_2.jpg",
+    "songData": "sounds/song_2.mp3"
+  },
+  {
+    "songTitle": "Song 3",
+    "channelName": "NCS",
+    "songThumbnail": "images/hamster_3.jpg",
+    "songData": "sounds/song_3.mp3"
+  },
+  {
+    "songTitle": "Song 4",
+    "channelName": "NCS",
+    "songThumbnail": "images/hamster_4.jpg",
+    "songData": "sounds/song_4.mp3"
+  },
+  {
+    "songTitle": "Song 5",
+    "channelName": "NCS",
+    "songThumbnail": "images/hamster_5.jpg",
+    "songData": "sounds/song_5.mp3"
+  }
+]
